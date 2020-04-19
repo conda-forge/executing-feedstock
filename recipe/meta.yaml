@@ -1,17 +1,17 @@
 {% set name = "executing" %}
-{% set version = "0.4.2" %}
+{% set version = "0.4.3" %}
 
 package:
-  name: "{{ name|lower }}"
-  version: "{{ version }}"
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: da16e4b44d4d209ea9cfc63d68f3d105a38bb53ecf77d79ab5115867759b388f
+  sha256: a232a732603eba24ff863632f2389b73072baadc185aa9e290a4792ae9f700b8
 
 build:
   number: 0
-  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vvv "
+  script: '{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vvv '
   noarch: python
 
 requirements:
