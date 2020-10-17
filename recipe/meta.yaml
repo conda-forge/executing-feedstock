@@ -1,5 +1,5 @@
 {% set name = "executing" %}
-{% set version = 0.5.3 %}
+{% set version = "0.5.3" %}
 
 
 package:
