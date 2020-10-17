@@ -1,5 +1,6 @@
 {% set name = "executing" %}
-{% set version = "0.4.3" %}
+{% set version = 0.5.3 %}
+
 
 package:
   name: {{ name|lower }}
@@ -7,33 +8,40 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: a232a732603eba24ff863632f2389b73072baadc185aa9e290a4792ae9f700b8
+  sha256: 0c039c841e0b606fca7774b42302697b2f0eca78b4d0e3e582024cf881776379
 
 build:
   number: 0
-  script: '{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vvv '
   noarch: python
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - pip
     - python
+    - setuptools
+    - setuptools_scm
+    - wheel
   run:
     - python
 
 test:
   imports:
-    - {{ name }}
+    - executing
+  commands:
+    - pip check
+  requires:
+    - pip
 
 about:
-  home: https://github.com/alexmojaki/executing
+  home: https://pypi.org/project/executing
+  summary: Get the currently executing AST node of a frame, and other information
   license: MIT
   license_family: MIT
   license_file: LICENSE.txt
-  summary: Get the currently executing AST node of a frame, and other information
-  doc_url: https://github.com/alexmojaki/executing
   dev_url: https://github.com/alexmojaki/executing
 
 extra:
   recipe-maintainers:
     - alexmojaki
+    - anthchirp
