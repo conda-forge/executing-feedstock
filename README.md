@@ -1,15 +1,15 @@
 About executing
 ===============
 
-Home: https://github.com/alexmojaki/executing
+Home: https://pypi.org/project/executing
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/executing-feedstock/blob/master/LICENSE.txt)
 
 Summary: Get the currently executing AST node of a frame, and other information
 
-
+Development: https://github.com/alexmojaki/executing
 
 Current build status
 ====================
@@ -117,4 +117,5 @@ Feedstock Maintainers
 =====================
 
 * [@alexmojaki](https://github.com/alexmojaki/)
+* [@anthchirp](https://github.com/anthchirp/)
 
