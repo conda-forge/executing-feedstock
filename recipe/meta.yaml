@@ -21,7 +21,6 @@ requirements:
     - python >=2.7
     - setuptools
     - setuptools_scm
-    - wheel
   run:
     - python >=2.7
 
