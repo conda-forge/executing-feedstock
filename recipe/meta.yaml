@@ -1,5 +1,5 @@
 {% set name = "executing" %}
-{% set version = "0.5.4" %}
+{% set version = "0.6.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 07b71adef0399e8579fa0165db5e5f8e9dd961fa66572664de95c838879768eb
+  sha256: a07046e608c56948a899e1c7dc45327ed84ee67edf245041eb8c6722658c14e3
 
 build:
   number: 0
@@ -18,12 +18,11 @@ build:
 requirements:
   host:
     - pip
-    - python
+    - python >=2.7
     - setuptools
     - setuptools_scm
-    - wheel
   run:
-    - python
+    - python >=2.7
 
 test:
   imports:
