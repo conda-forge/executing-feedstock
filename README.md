@@ -1,11 +1,11 @@
-About executing
-===============
+About executing-feedstock
+=========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/executing-feedstock/blob/main/LICENSE.txt)
 
 Home: https://pypi.org/project/executing
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/executing-feedstock/blob/main/LICENSE.txt)
 
 Summary: Get the currently executing AST node of a frame, and other information
 
