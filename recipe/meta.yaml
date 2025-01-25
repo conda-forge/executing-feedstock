@@ -1,5 +1,5 @@
 {% set name = "executing" %}
-{% set version = "2.1.0" %}
+{% set version = "2.2.0" %}
 
 
 package:
@@ -8,10 +8,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 8ea27ddd260da8150fa5a708269c4a10e76161e2496ec3e587da9e3c0fe4b9ab
+  sha256: 5d108c028108fe2551d1a7b2e8b713341e2cb4fc0aa7dcf966fa4327a5226755
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
