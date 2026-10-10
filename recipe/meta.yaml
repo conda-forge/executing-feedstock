@@ -1,5 +1,5 @@
 {% set name = "executing" %}
-{% set version = "2.2.1" %}
+{% set version = "2.3.0" %}
 
 
 package:
@@ -7,8 +7,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 3632cc370565f6648cc328b32435bd120a1e4ebb20c77e3fdde9a13cd1e533c4
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 15919cb5d667e5cb4e099511971d00d659573fff2dd5c4e6cd8b71636c7858d2
 
 build:
   number: 0
